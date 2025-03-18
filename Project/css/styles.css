@@ -1,0 +1,124 @@
+/* General Styles - Applied to the entire body and basic elements */
+body {
+  color: #000000; /* Sets the default text color to black */
+  background-color: #FFFFFF; /* Sets the default background color to white */
+  font-family: Arial, sans-serif; /* Sets the default font to Arial or a generic sans-serif font */
+  margin: 0; /* Resets default body margin */
+}
+
+/* Footer Styles - Styles specifically for the footer section */
+.footer {
+  background-color: #f8f8f8; /* Light grey background for the footer */
+  padding: 20px 0; /* Adds 20px padding on top and bottom, 0 on left and right */
+  text-align: center; /* Centers the text within the footer */
+  color: #2A2C2E; /* Dark grey color for footer text */
+  font-family: Arial, sans-serif; /* Font for footer text, same as body */
+  font-weight: 400; /* Normal font weight */
+  font-size: 16px; /* Font size for footer text */
+}
+
+/* Paragraph Styles - Styles for <p> elements throughout the site */
+p {
+  font-family: Arial, sans-serif; /* Font for paragraph text */
+  font-weight: 400; /* Normal font weight */
+  font-size: 20px; /* Font size for paragraph text */
+  color: #2A2C2E; /* Dark grey color for paragraph text */
+}
+
+/* Section Block Styles - Base styles for all content sections */
+.section-block {
+  padding: 20px; /* Adds 20px padding around the content in each section */
+  margin: 0; /* Resets default margin for section blocks */
+  display: flex; /* Enables flexbox layout for section blocks */
+  flex-direction: column; /* Sets flex direction to column, stacking content vertically */
+  min-height: auto; /* Allows section height to adjust to content */
+}
+
+/* Column Block Styles - Styles for content columns within sections */
+.column-block {
+  word-break: break-word; /* Prevents long words from overflowing their container */
+  flex-grow: 1; /* Allows the column to grow and take up available space */
+  display: flex; /* Enables flexbox layout for column blocks */
+  flex-direction: column; /* Sets flex direction to column */
+  min-width: 250px; /* Minimum width for column blocks */
+  margin: 15px 0; /* Adds 15px margin on top and bottom, 0 on left and right */
+  padding: 16px; /* Adds 16px padding inside the column block */
+}
+
+/* Hero Section Styles - Styles for the introductory hero section */
+.hero-section {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://cdn.hubblecontent.msit.osi.office.net/m365content/publish/5bf26750-aeb7-4432-80d2-d557f1ff4ed0/thumbnails/xxlarge.jpg"); /* Background image with a dark gradient overlay */
+  background-position: center center; /* Centers the background image */
+  background-repeat: no-repeat; /* Prevents the background image from repeating */
+  background-size: cover; /* Scales the background image to cover the entire section */
+  padding: 100px 20px; /* Adds 100px padding on top and bottom, 20px on left and right */
+}
+
+/* Hero Column Block Styles - Styles for the column within the hero section */
+.hero-column-block {
+  min-width: 250px; /* Minimum width for hero column block */
+  flex-grow: 1; /* Allows the column to grow */
+  display: flex; /* Enables flexbox layout */
+  flex-direction: column; /* Sets flex direction to column */
+  margin: 0; /* Resets default margin */
+}
+
+/* Hero Section Heading Styles - Styles for headings within the hero section */
+.hero-section h1,
+.hero-section h4 {
+  text-align: center; /* Centers the text within the headings */
+  color: white; /* Sets the text color to white for headings in the hero section */
+}
+
+/* Table Styles - Styles for tables */
+.table {
+  border-collapse: collapse; /* Collapses table borders into a single border */
+  background-color: inherit; /* Inherits background color from parent */
+  border-top: #e58700 2px solid; /* Orange top border for the table */
+}
+
+/* Table Header and Data Cell Styles - Styles for <th> and <td> elements */
+.table th,
+.table td {
+  background-color: inherit; /* Inherits background color from parent */
+  border-bottom: 2px solid #dee2e6; /* Light grey bottom border for table cells */
+  font-size: 20px; /* Font size for table cell text */
+  text-align: center; /* Centers the text within table cells */
+  color: #2A2C2E; /* Dark grey color for table cell text */
+  font-family: Arial, sans-serif; /* Font for table cell text */
+}
+
+/* Section Background Colors - Styles to set background colors for different sections */
+.about-me-section {
+  background-color: #ffca4b; /* Yellow background for the about me section */
+}
+
+.skills-section {
+  background-color: #277493; /* Blue background for the skills section */
+}
+
+.skills-table-section {
+  background-color: #f3dbb1; /* Light yellow background for the skills table section */
+}
+
+.more-about-me-section {
+  background-color: #88aba2; /* Green background for the more about me section */
+}
+
+.reflection-section {
+  background-color: #e58700; /* Orange background for the reflection section */
+}
+
+/* Media Query for screens less than 460px wide - section backgrounds - Responsive design for smaller screens */
+@media (max-width: 460px) {
+  .section-block:not(.hero-section) {
+    background-color: white; /* Sets section backgrounds to white on small screens (except hero section) */
+  }
+}
+
+/* Media Query for screens less than 460px wide - body background - Responsive design for smaller screens */
+@media (max-width: 460px) {
+  body {
+    background-color: white; /* Sets body background to white on small screens */
+  }
+}
