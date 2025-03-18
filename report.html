@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Report</title>
+</head>
+<body>
+    <a href="index.html">index.html</a>
+<p><b>
+    General Section & Layout Classes:
+    <br>
+    container (Bootstrap - for responsive containers)
+    <br>
+    col-md-6 (Bootstrap - for medium-sized columns in a grid)
+    <br>
+    row (Bootstrap - for grid rows)
+    <br>
+    align-items-center (Bootstrap - for vertical alignment in flexbox/grid)
+    <br>
+    column-block (Custom - likely for general styling of content blocks within sections)
+    <br>
+    hero-column-block (Custom - specific to the hero section content)
+    <br>
+    section-block (Custom - base class for all sections, likely for shared styling)
+    <br><br>
+    Text & Alignment Classes:
+    <br>
+    text-center (Bootstrap - for centering text)
+    <br><br>
+    Image Classes:
+    <br>
+    img-fluid (Bootstrap - for responsive images that scale to their container)
+    <br><br>
+    Table Classes:
+    <br>
+    table (Bootstrap - for basic table styling)
+    <br><br>
+    Section Specific Classes (for targeting specific sections):
+    <br>
+    hero-section
+    <br>
+    about-me-section
+    <br>
+    skills-section
+    <br>
+    skills-table-section
+    <br>
+    more-about-me-section
+    <br>
+    reflection-section
+    <br>
+    footer
+    <br>
+    <br>
+The CSS classes used in this index.html file come from two sources:
+<br>
+Bootstrap 5: Classes like container, row, col-md-6, align-items-center, text-center, img-fluid, and table are all part of the Bootstrap CSS framework. They are being used to quickly create a responsive and styled layout.
+<br>
+Custom CSS (Likely defined in ./css/styles.css): Classes like section-block, hero-column-block, column-block, and footer are likely custom classes defined in the styles.css file to provide specific styling and structure to the portfolio website.
+<br>
+This combination of Bootstrap and custom CSS classes is a common approach to web development, leveraging the power of a CSS framework for layout and basic styling while adding custom styles for branding and specific design elements.
+<br>
+</b></p>
+
+<p>
+Structure of the page
+<br>
+This page is primarily divided into main and footer part.
+    <br>
+    1.main: This is the main content area of the page, encompassing all the sections like "Hero," "About Me," "Skills," etc.
+    <br>
+    2.footer: This is the footer section, containing copyright information.
+<br>
+The main element is further divided into several section elements, each representing a distinct content block on the page. Each <section> generally follows a similar pattern:
+    <br>    
+    1.section.section-block: This is the base class for all sections, likely providing some general styling.
+    <br>
+    2..container: A Bootstrap container to manage responsiveness and center the content.
+    <br>
+    3.Content Blocks (div elements): Inside the container, div elements are used to structure the content within each section, often using Bootstrap's grid system (row, col-md-*) for layout.
+    <br>
+    <br>
+1. Hero Section 
+<br>
+Purpose: Introduces the portfolio and provides a welcoming headline.
+<br>
+Structure:
+<br>
+.container
+<br>
+.hero-column-block text-center
+<br>
+h1: "Welcome to Zian Wang's Portfolio"
+<br>
+h4: "Postgraduate Student at UL/Network Engineer"
+<br>
+<br>
+
+2. About Me Section 
+<br>
+Purpose: Provides a brief introduction about Zian Wang's background, studies, and career goals.
+<br>
+Structure:
+<br>
+.container
+<br>
+.column-block text-center
+<br>
+h2: "About Me"
+<br>
+p: Paragraph describing Zian's background, skills, and career aspirations.
+<br>
+<br>
+
+    
+3. Skills Section 
+<br>
+Purpose: Highlights Zian's skills and interests, using both text and an image.
+<br>
+Structure:
+<br>
+.container
+<br>
+.row align-items-center (Bootstrap row for horizontal layout)
+<br>
+.col-md-6 (Left column - Medium devices and up)
+<br>
+img: Image "Person coding on a laptop" (./images/xxlarge.jpg)
+<br>
+.col-md-6 (Right column - Medium devices and up)
+<br>
+h2: "Skills & Interests"
+<br>
+p: Paragraph describing skills (Python, Java, HTML - novice level), network knowledge, and network security interest (Capture the Flag).
+<br>
+<br>
+
+4. Skills Table Section 
+<br>
+Purpose: Presents a table summarizing Zian's proficiency levels in different skills.
+<br>
+Structure:
+<br>
+.container
+<br>
+.column-block text-center
+<br>
+h2: "Skills Proficiency"
+<br>
+table class="table" (Bootstrap table)
+<br>
+<br>
+
+
+5. More About Me Section 
+<br>
+Purpose: Provides further personal details about Zian's future goals, hobbies, and passions, alongside a contact information image.
+<br>
+Structure:
+<br>
+.container
+<br>
+.row align-items-center (Bootstrap row for horizontal layout)
+<br>
+.col-md-6 (Left column - Medium devices and up)
+<br>
+h2: "More About Me"
+<br>
+Future Goals
+<br>
+p: Paragraph detailing future career goals (network development engineer, cloud engineer, network engineer).
+<br>
+Hobbies & Passions
+<br>
+p: Paragraph describing hobbies (reading novels, mobile games, gym, swimming, rock climbing, cycling).
+<br>
+.col-md-6 (Right column - Medium devices and up)
+<br>
+img: Image "Contact information" (./images/xxlarge(1).jpg)
+<br>
+<br>
+
+6. Reflection Section 
+<br>
+Purpose: Offers a reflection on Zian's current situation and future plans, including a motivational quote image.
+<br>
+Structure:
+<br>
+.container
+<br>
+.column-block text-center
+<br>
+h2: "Reflection & Future Plans"
+<br>
+p: Paragraph explaining that the page is a summary of his current situation, and he is still learning and planning for the future (certificates, further study).
+<br>
+img: Image "Motivational quote" (./images/Inspiration.jpg)
+<br>
+<br>
+
+Footer Section 
+<br>
+Purpose: Contains copyright information at the bottom of the page.
+<br>
+Structure:
+<br>
+.container
+<br>
+p: "Copyright © 2025. All rights reserved."
+<br> 
+        
+        
+        
+</p>
+
+<img src="./images/boxified-design.jpg" alt="Box Design drawings">
+<img src="./images/css-class.jpg" alt="CSS class">
+
+</body>
